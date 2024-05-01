@@ -9,12 +9,14 @@
 // within a single line
 
 // REPLACE THIS WITH YOUR CODE
+const isGreaterThanTwenty = (param1) => param1 > 20;
 
 /// /////// PROBLEM 2 //////////
 
 // Create a one line arrow function called seven that will return the number 7
 
 // REPLACE THIS WITH YOUR CODE
+const seven = () => 7;
 
 /// /////// PROBLEM 3 //////////
 
@@ -28,11 +30,11 @@
 // }
 
 // REPLACE THIS WITH YOUR CODE
-
+const addNums = (param1, param2) => param1 + param2;
 // function subtractNums(num1, num2) {
 //   return num1 - num2;
 // }
-
+const subtractNums = (param1, param2) => param1 - param2;
 // REPLACE THIS WITH YOUR CODE
 
 // function double(num) {
@@ -40,6 +42,8 @@
 // }
 
 // REPLACE THIS WITH YOUR CODE
+const double = (param) => param * 2;
+
 
 /// /////// PROBLEM 4 //////////
 
@@ -52,7 +56,9 @@
 // contain an explicit return statement.
 
 // REPLACE THIS WITH YOUR CODE
-
+const gemInfo = (gemType, gemSize, gemWeight) => {
+  return {gemType, gemSize, gemWeight}
+}
 /// /////// PROBLEM 5 //////////
 
 // Create a function called outerFn, that takes in a callback as a parameter, and returns
@@ -170,6 +176,10 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 let totalPopulation; //  = populations.reduce(/* Provide Your Callback Here */)
 
 ////////// PROBLEM 12 //////////
+/*
+  Now we're going to ramp these up a little bit.
+  Instead of just arrays of numbers, we are going to have array of objects that we want to use map, filter, and reduce with.
+*/
 
 // Do not edit the code below.
 const monstersInYourPocket = [
@@ -201,12 +211,9 @@ const monstersInYourPocket = [
 ];
 // Do not edit the code above.
 
-/*
-  Now we're going to ramp these up a little bit.
-  Instead of just arrays of numbers, we are going to have array of objects that we want to use map, filter, and reduce with.
+//Use the filter method to return only the monsters that have a CP of over 200.
 
-  Use the filter method to return only the monsters that have a CP of over 200.
-*/
+//Bonus Challenge: Add all CP for each monsterInYourPocket, filter out all that start with w, and lowercase all names
 
 //Code Here
 let myStrongest; // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
